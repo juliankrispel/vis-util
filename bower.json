@@ -1,10 +1,10 @@
 {
-  "name": "visUtil",
+  "name": "vis-util",
   "version": "0.0.0",
   "authors": [
     "Julian Krispel-Samsel <juliankrispel@yahoo.de>"
   ],
-  "main": "src\\visUtil.js",
+  "main": "src\\vis-util.js",
   "license": "MIT",
   "ignore": [
     "**/.*",

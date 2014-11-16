@@ -1,0 +1,16 @@
+{
+  "name": "visUtil",
+  "version": "0.0.0",
+  "authors": [
+    "Julian Krispel-Samsel <juliankrispel@yahoo.de>"
+  ],
+  "main": "src\\visUtil.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "visUtil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "visUtil.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julian Krispel-Samsel <julian@goodafternoon.co> (http://goodafternoon.co/)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-concat": "^2.4.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.1",
+    "gulp-wrap": "^0.5.0"
+  }
+}

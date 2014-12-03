@@ -1,5 +1,5 @@
 (function(){
-var visualisationService = {
+  var visUtil = {
     degToRad: function(degrees){
         return Math.PI * degrees / 180;
     },
@@ -387,4 +387,10 @@ var visualisationService = {
         }
     }
 };
+
+  if(window !== undefined){
+    window.visUtil = visUtil;
+  }else if(module !== undefined){
+    module.exports = visUtil;
+  }
 })();

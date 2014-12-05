@@ -18,7 +18,6 @@ gulp.task('build', function() {
         .pipe(rename({extname: '.min.js'}))
         .pipe(gulp.dest('./dist'));
 
-
     gulp.src('src/*.js')
         .pipe(concat(package.name + '.js'))
         .pipe(wrap({src: 'gulp-wrap-templates/angular-wrap.js'}))

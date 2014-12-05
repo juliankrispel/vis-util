@@ -17,33 +17,6 @@
         };
     },
 
-    massageValuationIntoMetroPie: function(assets){
-        var total = _(assets).pluck('ClosingValue').reduce(function(sum, num){
-            return sum + num;
-        });
-
-        return _(assets).groupBy('Type').map(function(arr, label){
-            var subGroupType = 'GeographicExposure';
-            if(label === 'Cash'){
-                subGroupType = 'AccountType';
-            }
-            var groupPercentage = _(arr).pluck('ClosingValue').reduce(sum) / total * 100;
-
-            return {
-                label: label,
-                value: groupPercentage,
-                subGroups: _(arr).groupBy(subGroupType).map(function(subArr, label){
-                    return {
-                        label: label,
-                        value: _(subArr).pluck('ClosingValue').reduce(sum) / total * 100
-                    };
-                }).value()
-            };
-        }).value();
-
-    },
-
-
     createPieChartVectors: function(data, totalDegrees, startAngle, isClockWise){
         var that = this;
         if(!_.every(data, _.isNumber) && !_.every(data, function(n){ return n > 0; })){
@@ -124,7 +97,6 @@
         }
     },
 
-
     nearest: function(n, v) {
         n = n / v;
         n = Math.round(n) * v;
@@ -146,9 +118,6 @@
 
     isDataPoint: function(obj){
         return obj.x !== undefined && obj.y !== undefined;
-    },
-
-    massagePerfNumbersIntoGraphData: function(){
     },
 
     assertGraphData: function(data){

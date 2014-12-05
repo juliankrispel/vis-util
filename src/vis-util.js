@@ -96,7 +96,6 @@
         }
     },
 
-
     nearest: function(n, v) {
         n = n / v;
         n = Math.round(n) * v;
@@ -118,9 +117,6 @@
 
     isDataPoint: function(obj){
         return obj.x !== undefined && obj.y !== undefined;
-    },
-
-    massagePerfNumbersIntoGraphData: function(){
     },
 
     assertGraphData: function(data){

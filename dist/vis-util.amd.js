@@ -1,5 +1,5 @@
 (function(){
-define(function() {
+define(['_'], function(_) {
 var visUtil = {
     degToRad: function(degrees){
         return Math.PI * degrees / 180;
